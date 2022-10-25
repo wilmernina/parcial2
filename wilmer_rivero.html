@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <title>PARCIAL 2</title>
+    <style>
+        .title{
+            display: flex;
+            justify-content: space-evenly;
+        }
+        body{
+          margin-left: 50px;
+          margin-right: 50px;
+        }
+        .products{
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+        }
+    </style>
+</head>
+<body background="coroico_4.jpg" >
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+          <a class="navbar-brand" >Inicio</a>
+          <a class="navbar-brand" >Sobre Nosotros</a>
+          <a class="navbar-brand" >Galeria</a>
+          <a class="navbar-brand" >Contacto</a>
+          <a class="navbar-brand" >Login</a>
+         
+          <a class="navbar-brand" >bienvenido(@) Wilmer Rivero</a>
+        </div>
+      </nav>
+     
+    
+      <div class="row">
+        <div class="col-md-8">
+          <div>
+            <div class="row">
+              <div class="col-md-12">
+                <img src="coroico_1.jpg" width="825px" height="400px">
+              </div>       
+            </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <br>
+            <h4>INICIAR SESION</h4>
+            <div class="form-group mb-2">
+              <label for="staticEmail2" class="sr-only">Usuario</label>
+              <input type="text" class="form-control" placeholder="Usuario" id="user">
+            </div>
+            <div class="form-group mb-2">
+              <label for="inputPassword2" class="sr-only">Contraseña</label>
+              <input type="password" class="form-control" id="password" placeholder="Contraseña">
+            </div>
+            <button type="submit" class="btn btn-primary mb-2" onclick="sayHello()">Iniciar</button>
+        <div class="login" id="login"></div>
+       
+        <div class="row" >
+          <div class="col-md-4">
+            <h5>MAS</h5>
+            <ul>
+              <li>Actividades</li>
+              <li>Concejo Municipal</li>
+              <li>Dirección Deportes</li>
+              <li>Dirección Administrativa</li>
+              <li>Proyectos</li>
+              <li>Programas</li>
+            </ul>
+          </div>
+        </div>
+
+       
+
+        </div>
+
+
+
+            <div class="row">
+              <div style="background-color:rgb(238, 241, 202)" class="col-md-4" >
+                ACTIVIDADES
+                <br>
+                ANIVERSARIO
+                <br>
+                Conmemoramos con civismo el aniversario de Coroico y los 211 años del Milagro de la Virgen de la Candelaria con las diferentes organizaciones sociales, instituciones y unidades educativas de Coroico.
+                <br>
+                <br>
+                <br>
+                <br>
+              
+              </div>
+              <div class="col-md-4">
+                <br>            
+                <img src="coroico_2.jpg" width="400" height="200px">
+              </div>
+             
+              <div style="background-color:rgb(241, 241, 236)" class="col-md-4">
+                <br>            
+                <div class="row">
+                   
+                    
+                    
+                    <center><h5>Convertidor de Dolares a Bolivianos</h5></center>                
+                              <form name="convertidor">
+                                  <table >
+                                      <tbody>
+                                          <tr align="center">
+                                              <td colspan="2" rowspan="1">
+                                                  <input value="Procesar" type="button" onclick="calcular();" class="btn btn-primary mb-2" o/>
+                                                  <input value="Borrar" type="reset" class="btn btn-default mb-2" o/>
+                                              </td>
+                                              
+                                          </tr>
+                                          <tr>
+                                              <td>
+                                                <br>
+                                                  <label for="dolares">De Dolares:</label>
+                                              </td>
+                                              <td>
+                                                  <input name="pesos"  type="text" class="form-control" />
+                                              </td>
+                                          </tr>
+                                          <tr>
+                                              <td>
+                                                  <label for="pesos">A Bs:</label>
+                                              </td>
+                                              <td>
+                                                  <input name="dolar" type="text" class="form-control" />
+                                              </td>
+                                          </tr>
+                                      </tbody>
+                                  </table>
+                              </form>         
+                  </div>
+                
+              </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-4">
+                  <img src="coroico_3.jpg" width="400" height="200px">
+                </div>
+                <div style="background-color:rgb(238, 241, 202)" class="col-md-4">
+                  AVISOS
+                  <br>
+                  COMITE DEL AGUA
+                  <br>
+                  El Gobierno Autónomo Municipal de Coroico a través de la Mesa Técnica de Gestión del Agua: Dirección de Medio Ambiente, Cáritas Coroico, UAC-Carmen Pampa, Fundación Natura Bolivia, Gestión Social Proyecto de Construcción Sistema de Agua Potable Coroico, EPSAS Coroico, Parque Cotapata convocan a todos los Comités de Agua Potable y Saneamiento (CAPyS) del municipio de Coroico al 1er foro municipal del agua - fortaleciendo a los CAPyS de Coroico “unidos por el agua"
+                  <br>
+                  <br>
+                </div>
+               
+                </div>
+
+
+
+
+      </div>   
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <script> 
+        let users = [
+            {user:"Wilmer",
+              password:"Rivero" 
+            },
+            {user:"wilmer",
+              password: "rivero"}
+        ]
+        let visitas = 0
+        function sayHello(){
+          let name = document.getElementById("user").value
+          let password = document.getElementById("password").value
+          let newUser = {
+              user: name,
+              password: password
+          } 
+          
+          let login = document.getElementById("login")
+          let contVisitas = document.getElementById("visitas")
+          if(users.filter(user => user.user===name && user.password ===password).length>0){
+            login.innerHTML = "bienvenido "+ name
+            visitas++
+            contVisitas.innerHTML = visitas
+          }else{
+              login.innerHTML = "usuario incorrecto"
+          }
+        }
+
+        
+
+         
+
+          function calcular(){
+            var pes = (document.convertidor.pesos.value)*1;
+            var tot =pes*6.96;
+            document.convertidor.dolar.value=tot;
+          }
+        
+                  
+    </script>      
+</body>
+</html>
